@@ -23,5 +23,7 @@ steps:
     cd helm-root
     repo_uri=$(git remote get-url origin)
     echo "klonuje $repo_uri"
+    git clone -b helm-repo $repo_uri
+    ls -la
   displayName: 'Run gitversion'
 
