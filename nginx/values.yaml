@@ -1,0 +1,7 @@
+nginx:
+  image: nginx
+  tag: stable
+  resourceRequests:
+    mem: 500Mi
+    cpu: 500m
+  port: 80
