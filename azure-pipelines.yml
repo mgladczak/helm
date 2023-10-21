@@ -19,6 +19,9 @@ steps:
   
 - script: |
     # docker run --rm -v "$(pwd):/repo" gittools/gitversion:5.6.6 /repo
-    gitversion
+    mkdir helm-root
+    cd helm-root
+    repo_uri=$(git remote get-url origin)
+    echo "klonuje $repo_uri"
   displayName: 'Run gitversion'
 
